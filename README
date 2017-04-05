@@ -1,0 +1,22 @@
+1. The entry function file is main.
+   In function main, there is a variable buffer_size, which is 
+   the depth of scan window. buffer_size can be set as 300, 900, 1200, and 1500.
+
+2. The variable Sen_0 controls the number of communication non-sensitive jobs.
+   The variable Sen_1 controls the number of communication sensitive jobs.
+   By changing the value of Sen_0, and Sen_1, we can change the distribution of communication sensitivity.
+   The default is communication sensitive and non-sensitive are equally distributed, which means we have half of the jobs are communication sensitive, and half of jobs are communication non-sensitive.
+
+3. The function file data generates workload of jobs with node requests below 300 nodes.
+
+
+4. The simulation results are in UTL_300_rand.txt, UTL_900_rand.txt, UTL_1200_rand.txt, UTL_1500_concave.txt, UTL_1500_convex.txt, UTL_1500_rand.txt
+
+   UTL_300_rand.txt is  the result of our approach with window size being 300, and random communication sensitivity distribution.
+   UTL_900_rand.txt is  the result of our approach with window size being 900, and random communication sensitivity distribution.
+   UTL_1200_rand.txt is the result of our approach with window size being 1200, and random communication sensitivity distribution.
+   UTL_1500_concave.txt is the result of our approach with window size being 1500, and all jobs are communication non-sensitive.
+   UTL_1500_convex.txt is the result of our approach with window size being 1500, and all jobs are communication sensitive.
+   UTL_1500_rand.txt is the result of our approach with window size being 1500, and random communication sensitivity distribution.
+
+5. File trace.cv is the originally Blue Waters trace of Sep. 2015.
