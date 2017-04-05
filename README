@@ -19,4 +19,4 @@
    UTL_1500_convex.txt is the result of our approach with window size being 1500, and all jobs are communication sensitive.
    UTL_1500_rand.txt is the result of our approach with window size being 1500, and random communication sensitivity distribution.
 
-5. File trace.cv is the originally Blue Waters trace of Sep. 2015.
+5. File trace.csv is the originally Blue Waters trace of Sep. 2015.
